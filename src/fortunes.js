@@ -1,52 +1,64 @@
 // fortunes.js
+import img1 from './img_card/fortune1.avif';
+import img2 from './img_card/fortune2.avif';
+import img3 from './img_card/fortune3.avif';
+import img4 from './img_card/fortune4.avif';
+import img5 from './img_card/fortune5.avif';
+import img6 from './img_card/fortune6.avif';
+import img7 from './img_card/fortune7.avif';
+import img8 from './img_card/fortune8.avif';
+import img9 from './img_card/fortune9.avif';
+
+
+
+
 
 export const fortunes = [
   {
     text: "오늘은 새로운 기회가 찾아오는 날이에요.",
-    img: "https://source.unsplash.com/300x150/?opportunity,new,business"
-  },
+    img: img1
+  }
+  ,
   {
     text: "작은 변화가 큰 행복으로 이어질 거예요.",
-    img: "https://source.unsplash.com/300x150/?change,happiness,positive"
+    img: img2
   },
-  {
-    text: "긍정적인 마음이 좋은 결과를 만듭니다.",
-    img: "https://source.unsplash.com/300x150/?positive,mindset,sunshine"
-  },
+
   {
     text: "어려움이 있더라도 곧 좋은 일이 있을 거예요.",
-    img: "https://source.unsplash.com/300x150/?hope,light,darkness"
-  },
+    img: img3
+  }
+  ,
+
   {
     text: "주변 사람들과의 소통이 중요해요.",
-    img: "https://source.unsplash.com/300x150/?communication,friends,conversation"
-  },
+    img: img4
+  }
+  ,
   {
     text: "오늘은 자신을 믿고 도전해보세요.",
-    img: "https://source.unsplash.com/300x150/?challenge,confidence,motivation"
-  },
+    img: img5
+  }
+  ,
   {
     text: "생각지 못한 행운이 찾아올 수 있어요.",
-    img: "https://source.unsplash.com/300x150/?luck,fortune,clover"
-  },
+    img: img6
+  }
+  ,
   {
     text: "편안한 마음으로 하루를 시작해보세요.",
-    img: "https://source.unsplash.com/300x150/?calm,morning,relax"
-  },
+    img: img7
+  }
+  ,
   {
     text: "조금 느려도 괜찮아요, 꾸준함이 답입니다.",
-    img: "https://source.unsplash.com/300x150/?steady,progress,slow"
-  },
+    img: img8
+  }
+  ,
   {
     text: "오늘은 웃음이 많은 하루가 될 거예요.",
-    img: "https://source.unsplash.com/300x150/?smile,laughter,happy"
-  },
-  {
-    text: "작은 친절이 큰 기쁨으로 돌아올 거예요.",
-    img: "https://source.unsplash.com/300x150/?kindness,help,gift"
-  },
-  {
-    text: "마음의 소리에 귀 기울여 보세요.",
-    img: "https://source.unsplash.com/300x150/?meditation,mindfulness,nature"
+    img: img9
   }
+  ,
+
 ];

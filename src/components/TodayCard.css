@@ -19,14 +19,44 @@
   gap: 15px;
 }
 
-.emotions-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.fortune-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
-.emotion-card {
-  cursor: pointer;
-  width: 100px;
+.fortune-text {
+  font-size: 1.2rem;
   text-align: center;
 }
+
+
+
+.emotions-list {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+
+
+.emotion-button { 
+ 
+  background-color: wheat;
+  border-color: white;
+  color: black;
+}
+
+
+.emotions-card-selected {
+ transform: scale(1.1);
+ background:   #d1ffd1;
+ border-color: #4caf50;
+ 
+}
+
+
+
+
