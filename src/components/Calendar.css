@@ -1,0 +1,21 @@
+.calendar-grid {
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  padding: 16px;
+  max-width: 500px;
+ 
+
+}
+
+.calendar-cell {
+  aspect-ratio: 1/1;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
