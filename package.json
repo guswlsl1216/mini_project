@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
+    "calendarize": "^1.1.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.10",
+    "react-calendar": "^6.0.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.1",
     "styled-components": "^6.1.19"

@@ -1,55 +1,33 @@
 import './Calendar.css'
 import { emotions  } from '../emotions'
+import React, { useEffect, useState } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 function EmotionCalendar () {
 
-  const today = new Date ();
-  const year = today.getFullYear();
-  const month = today.getMonth();
+  const [date, setDate] = useState(new Date());  //초기 값 : 오늘 날짜 생성 코드 
+  const [emotionHistory, setEmotionHistory] = useState({}); //초기 값은 빈 객체로 만들어줌 {} // emotionhistory는 키 밸류로 만든 객체 (처음엔 아무것도 입력 안했을 거니까 빈객체로 설정, 클릭해야만 값이 들어갈거니까 )
 
-  const startDate = new Date(year, month, 1);
-  const endDate = new Date(year, month + 1, 0);
-  const startDay = startDate.getDay();
-  const dayInMonth = endDate.getDate();
+  useEffect(() => {
 
-  const emotionHistory = JSON.parse(localStorage.getItem('emotionHistory')) || {};
-  const dates = [];
+  const stored = localStorage.getItem('emotionHistory');
+    if (stored) {
+      setEmotionHistory(JSON.parse(stored));
+    }
+  }, []);
 
-  for(let i=0; i < startDay; i++) {
-    dates.push(null);
-  }
+  const handleEmotionSelect = (emotionId) => {
+    const dateStr = date.toDateString().split('T')[0];
 
-  for(let day = 1; day <= dayInMonth; day++) {
-    const dateStr = new Date( year, month, day ).toISOString().split('T')[0];
     
 
-    const emotion = emotionHistory[dateStr];
-    dates.push( {day, emotion});
+
+
   }
 
-  while (dates.length % 7 !== 0) {
-  dates.push(null);
-}
 
-  const calendarCells = dates.map((item, index) => (
-    <div key={index} className='calendar-cell'>
-      {item ? (
-        <>
-        <div className='day-number'>{item.day}</div>
-        <div className='emoji'>{item.emotion || ''}</div>
-        </>
-      ) : null }
-      
-    </div>
-  ));
 
-  return (
-
-    <div className='calendar-grid'>
-      {calendarCells}
-    </div>
-
-  );
 
 }
 
