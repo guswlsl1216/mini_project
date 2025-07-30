@@ -14,9 +14,10 @@ function Header ()  {
           <Nav className="me-auto">
             <Nav.Link onClick={ () => { navigate('/Today')}}>오늘 기록✏</Nav.Link>      
             <Nav.Link onClick={ () => { navigate('/Breath')}}>마음 챙김💚</Nav.Link>
-            <Nav.Link onClick={ () => { navigate('/Stories')}}>공유 일기📖</Nav.Link>
             <Nav.Link onClick={ () => { navigate('/Feels')}}>감정 루틴💊</Nav.Link>
+            
             <Nav.Link onClick={ () => { navigate('/Test')}}>테스트📜</Nav.Link>
+            <Nav.Link onClick={ () => { navigate('/Stories')}}>공유 일기📖</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

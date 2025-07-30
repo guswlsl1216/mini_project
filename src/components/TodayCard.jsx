@@ -9,8 +9,6 @@ import styled from "styled-components"
 
 function TodayCard ( ) {
  
-  const [selectedEmotion, setSelectedEmotion ] = useState(null);
-
   const [fortune, setFortune] = useState(null);
   const tempFortunes = ["행복한 하루!", "음...😼", "조금만 기다려줘...", "✨ 운세 뽑는 중...."];
   const [rollingText, setRollingText] = useState(tempFortunes[0])
@@ -40,18 +38,7 @@ function TodayCard ( ) {
 
   }, []);
 
-  const handleEmotionClick = (emotionId) => {
-      setSelectedEmotion(emotionId);
 
-  const today = new Date(Date.now() + 9 * 60 * 60 * 1000)
-  .toISOString()
-  .split('T')[0];
-
-  const saveEmotions = JSON.parse(localStorage.getItem('emotionHistory')) || {};
-  saveEmotions[today] = emotionId;
-  localStorage.setItem('emotionHistory', JSON.stringify(saveEmotions));
-
-};
    
 
   return (
@@ -70,30 +57,10 @@ function TodayCard ( ) {
           </Card.Body>
       </Card> 
       )}
+      </div>
       
 
-      <div className="emotions-while"> 
-        
-        <h2>오늘의 감정 선택🧠</h2>
-          <div className="emtions-list">
-              {emotions.map(({id, emoji, label}) => {
-              const isSelected = selectedEmotion === id;
 
-              return (            
-              <Button key={id} className={ `emotion-button ${isSelected ? 'emotions-card-selected' : ''} `}
-                onClick={() => handleEmotionClick(id)}
-              >
-              
-              
-              <span className="emoji">{emoji}</span>
-            
-              <span className="label">{label}</span>
-            </Button>
-              );
-            })}
-          </div> 
-        </div>
-  </div>
 
 ) };
 

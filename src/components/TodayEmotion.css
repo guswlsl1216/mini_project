@@ -1,0 +1,61 @@
+.emotions-while {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+
+.emotions-list {
+ display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 1fr); /* 4열 고정 */;
+  width: 100%;
+ 
+}
+
+
+
+.emotion-button { 
+ 
+  background-color: wheat;
+  border-color: white;
+  color: black;
+
+  white-space: nowrap;
+  text-align: center;
+  font-size: 14px;
+  padding: 6px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.emotions-card-selected {
+ transform: scale(1.1);
+ background:   #d1ffd1;
+ border-color: #4caf50;
+ 
+}
+
+.emotion-button {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 400px;
+
+}
+
+.emotion-button .emoji {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.emotion-title {
+  font-size: 15px;
+  font-weight: bold;
+}

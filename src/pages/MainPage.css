@@ -1,0 +1,28 @@
+.MainPage-Main {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding: 24px;
+gap: 48px;
+
+}
+
+.MainPage-fortune {
+  flex: 1.5;
+  max-width: 400px;
+}
+
+.MainPage-emotions {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+
+}
+
+.calendar-container {
+
+  margin-top: 50px;
+
+}
