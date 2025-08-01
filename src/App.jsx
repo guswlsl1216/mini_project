@@ -4,12 +4,15 @@ import './App.css'
 import Header from './components/Header'
 import { useState } from 'react'
 import MainPage from './pages/MainPage'
-import Today from './pages/Today'
+
 import Breath from './pages/Breathe'
 import Stories from './pages/Stories'
 import Feels from './pages/Feels'
 import Test from './pages/Test'
 import TodayCard from './components/TodayCard'
+import TodayRecord from './pages/TodayRecord'
+import './utils/diaryStorage'
+import DiaryWrite from './pages/DiaryWrite'
 
 // import Detail from './pages/Detail'
 
@@ -29,7 +32,8 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage content={content}/>} />
             
-          <Route path='/Today' element={<Today />} />
+          <Route path='/TodayRecord' element={<TodayRecord />} />
+          <Route path='/Write' element={<DiaryWrite />}  />
           <Route path='/Breath' element={<Breath />} />
           <Route path='/Stories' element={<Stories />} />
           <Route path='/Feels' element={<Feels />} />
@@ -46,3 +50,4 @@ function App() {
 export default App
 
 // 오늘 기록 : Today, 마음 챙김 : Breath , 공유 일기 : Stories , 감정 루틴 Feel
+// 

@@ -12,7 +12,7 @@ function Header ()  {
         <Container>
           <Navbar.Brand onClick={ () => { navigate('/')}}>Home🏡</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={ () => { navigate('/Today')}}>오늘 기록✏</Nav.Link>      
+            <Nav.Link onClick={ () => { navigate('/TodayRecord')}}>오늘 기록✏</Nav.Link>      
             <Nav.Link onClick={ () => { navigate('/Breath')}}>마음 챙김💚</Nav.Link>
             <Nav.Link onClick={ () => { navigate('/Feels')}}>감정 루틴💊</Nav.Link>
             

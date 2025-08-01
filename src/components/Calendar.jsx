@@ -46,7 +46,7 @@ function EmotionCalendar ({selectedE}) {
 
   const renderTileContent = ({ activeStartDate, date, view}) => {
     if (view == 'month') {
-     const month = String(date.getMonth()+1).padStart(2, 0);
+     const month = String(date.getMonth()+1).padStart(2, 0); //(2 자리수 맞춰주기 ), (설정한 숫자로 채워주기 start 앞부터, end 뒤부터)
      const day = String(date.getDate()).padStart(2, 0);
     const dateStr = `${date.getFullYear()}-${month}-${day}` //date.toISOString().split('T')[0];
 
