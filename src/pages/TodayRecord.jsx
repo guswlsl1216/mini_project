@@ -39,8 +39,8 @@ function TodayRecord () {
         style = {{
         position: "fixed", right: "35px",  borderRadius: "20%",
         width: "150px", height: "80px",fontSize: "20px", backgroundColor: "#fcd34d",
-        color: "#333", border: 'none', boxShadow: "0,0,0,0.5",   fontFamily: 'Pretend', 
-        }}  
+        color: "#333", border: 'none', boxShadow: "0,0,0,0.5",   fontFamily: "'Pretendard', sans-serif", fontSize: '15px'
+        , fontWeight: "600"}}  
         > 일기 쓰기 Click! 🪄
       </button>
 
