@@ -1,5 +1,6 @@
 import {motion} from 'framer-motion';
 import './HealingHeader.css';
+import  heart from '../img/heart.jpg';
 
 function HealingHeader (){
 
@@ -15,7 +16,7 @@ function HealingHeader (){
 return (
 
   <div className='healing-header-container'>
-    <img src='' alt='' className='healing-header-img' />
+    <img src={heart} alt='heart-img' className='healing-header-img' />
     
 
     <motion.div className='healing-header-text' 

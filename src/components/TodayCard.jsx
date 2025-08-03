@@ -51,8 +51,8 @@ function TodayCard ( ) {
       ) : (
       <Card className="fortune-card" style={{ marginBottom:'30px' }}>
           <Card.Img variant="top"  src={fortune.img} alt='fortune img' />
-          <Card.Body>
-          <Card.Title>오늘의 운세🍀</Card.Title>
+          <Card.Body className="fortune-text">
+          <Card.Title className="fortune-title">오늘의 운세🍀</Card.Title>
           <Card.Text>{fortune.text}</Card.Text>
           </Card.Body>
       </Card> 

@@ -15,11 +15,11 @@ function TodayRecord () {
   useEffect( () => {
     const diariesObj = diaryStorage.getAllDiary();
 
-    const diariesArray = Object.entries(diariesObj).map(([date, content]) => ({
+    const diariesArray = Object.entries(diariesObj).map(([date, diary]) => ({
       id: date,
       date: date,
-      title: "제목 없음",
-      content,
+      title: diary.title,
+      content : diary.content,
     }));
     setDiaryList(diariesArray)
   }, []);
@@ -37,11 +37,11 @@ function TodayRecord () {
 
       <button className="write-button" onClick={() => { console.log("버튼 클릭"); navigate("/write"); }}
         style = {{
-        position: "fixed", right: "30px", bottom: "20px", borderRadius: "30%",
-        width: "80px", height: "80px",fontSize: "32px", backgroundColor: "#fcd34d",
-        color: "#333", border: "none", boxShadow: "0,0,0,0.5",   
+        position: "fixed", right: "35px",  borderRadius: "20%",
+        width: "150px", height: "80px",fontSize: "20px", backgroundColor: "#fcd34d",
+        color: "#333", border: 'none', boxShadow: "0,0,0,0.5",   fontFamily: 'Pretend', 
         }}  
-        >
+        > 일기 쓰기 Click! 🪄
       </button>
 
     </>

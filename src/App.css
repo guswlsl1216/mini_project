@@ -1,0 +1,12 @@
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body {
+  background: linear-gradient(to bottom, #FDFCFB, #FAF3E0);  /* 더 자연스럽고 연한 톤 */
+ 
+}

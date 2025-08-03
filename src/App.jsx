@@ -32,12 +32,12 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage content={content}/>} />
             
-          <Route path='/TodayRecord' element={<TodayRecord />} />
-          <Route path='/Write' element={<DiaryWrite />}  />
-          <Route path='/Breath' element={<Breath />} />
-          <Route path='/Stories' element={<Stories />} />
-          <Route path='/Feels' element={<Feels />} />
-          <Route path='/Test' element={<Test />} />    
+          <Route path='/todayrecord' element={<TodayRecord />} />
+          <Route path='/write' element={<DiaryWrite />}  />
+          <Route path='/breath' element={<Breath />} />
+          <Route path='/stories' element={<Stories />} />
+          <Route path='/feels' element={<Feels />} />
+          <Route path='/test' element={<Test />} />    
       
         </Routes>
     
